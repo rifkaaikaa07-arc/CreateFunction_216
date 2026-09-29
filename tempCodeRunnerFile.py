@@ -1,12 +1,6 @@
-def convert_temperature(value, unit):
-    """Konversi suhu Celsius <-> Fahrenheit"""
-    if unit == 'C':
-        return (value * 9 / 5) + 32
-    elif unit == 'F':
-        return (value - 32) * 5 / 9
-    else:
-        return "Unit tidak valid, gunakan 'C' atau 'F'"
+from math import pi
 
-print(convert_temperature(100, 'C')) 
-print(convert_temperature(212, 'F'))   
-print(convert_temperature(37, 'C'))  
+luas_lingkaran = lambda jari_jari: pi * jari_jari ** 2
+
+hasil = luas_lingkaran(14)
+print("Luas lingkaran dengan jari-jari 14 adalah", hasil)
